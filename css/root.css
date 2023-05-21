@@ -1,0 +1,52 @@
+:root {
+  /*_____ primary colors _____*/
+  --bg-body: hsl(233, 47%, 7%);
+  --bg-card: hsl(244, 38%, 16%);
+  --acc-img: hsl(277, 64%, 61%);
+
+  /*_____ font-family _____*/
+  --f-df: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --f-2: 'Lexend Deca', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --f-h2: var(--f-df);
+  --f-p:  var(--f-df);
+  --f-stats: var(--f-df);
+  --f-stat-head: var(--f-2);
+
+  /*_____ text color _____*/
+  --fc-h2: hsl(0, 0%, 100%);
+  --fc-h2-acc: hsl(277, 64%, 61%);
+  --fc-p: hsla(0, 0%, 100%, 0.75);
+  --fc-stats: hsla(0, 0%, 100%, 0.75);
+  --fc-stat-head: hsl(0, 0%, 100%);
+  --text-footer: hsl(212, 21%, 14%);
+  --text-footer-a: hsl(180, 100%, 27%);
+  --text-footer-a-hov: hsl(39, 100%, 50%);
+  --text-footer-a-vis: hsl(300, 100%, 25%);
+
+  /*_____ font-size _____*/
+  --f-df: .9375rem;
+  --fs-h2: 2.25rem;
+  --fs-h2-mob: 28px;
+  --fs-p: var(--f-df);
+  --fs-stats: 1.5rem;
+  --fs-stat-head: .75rem;
+
+  /*_____ font-weight _____*/
+  --fw-h2: 700;
+  --fw-p: 400;
+  --fw-stats: 700;
+  --fw-stat-head: 400;
+
+  /*_____ line-height _____*/
+  --lh-h2: 2.75rem;
+  --lh-h2-mob: 2rem;
+  --lh-p: .9375rem;
+  --lh-p-mob: 1.5625rem;
+  --lh-stats: 1.5rem;
+  --lh-stats-mob: 1.8156rem;
+  --lh-stat-head: 1.5625rem;
+
+  /*_____ letter-spacing _____*/
+  --ls-stat-head: 1px;
+
+}

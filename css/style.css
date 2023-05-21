@@ -1,0 +1,32 @@
+/*_____ GLOBAL STYLES _____*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  font-family: var(--f-df);
+  font-size: var(--fs-df);
+  background: var(--bg-body);
+}
+
+@media (max-width: 600px) {
+  body {}
+}
