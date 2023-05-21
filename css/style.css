@@ -131,6 +131,7 @@ h3.stat-heading {
     flex-direction: column;
     max-width: 20.4375rem;
     min-height: 48.75rem;
+    margin-block: 2rem;
   }
 }
 
