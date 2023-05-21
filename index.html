@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,34 +8,93 @@
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/root.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/root.css">
 
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+  <body>
 
-  Get insights that help your business grow.
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <header class="sr-only">
+      <h1 tabindex="0">
+        Stats Preview Card
+      </h1>
+    </header>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+    
+    <main class="card">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      
+      <div class="image-wrap mobile">
+        <img
+          src="images/image-header-mobile.jpg"
+          alt="image of women in an office"
+        >        
+      </div>
+
+
+      <div class="content">
+
+
+        <h2>
+          Get <span class="h2-accent">insights</span> that help your business grow.
+        </h2>
+  
+        <p>
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+  
+        <div class="stats-container">
+  
+          <div class="stat-wrap">
+            <div class="stat-count">10k+</div>
+            <h3 class="stat-heading">companies</h3>
+          </div>
+  
+          <div class="stat-wrap">
+            <div class="stat-count">314</div>
+            <h3 class="stat-heading">templates</h3>
+          </div>
+  
+          <div class="stat-wrap">
+            <div class="stat-count">12m+</div>
+            <h3 class="stat-heading">queries</h3>
+          </div>
+  
+        </div>
+      
+      
+      </div>
+
+
+      <div class="image-wrap desktop">
+          <img
+            src="images/image-header-desktop.jpg"
+            alt="image of women in an office"
+          >       
+      </div>
+
+
+    </main>
+
+
+
+    <footer class="attribution">
+      Challenge by <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+      >Frontend Mentor</a>.
+      Coded by <a
+        href="https://github.com/Nix7amcm"
+        target="_blank"
+      >Nix7amcm⚡</a>.
+
+    </footer>
+  </body>
 </html>

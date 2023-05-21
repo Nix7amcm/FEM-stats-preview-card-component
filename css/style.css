@@ -11,8 +11,7 @@
   font: inherit;
 }
 
-img,
-svg {
+img {
   display: block;
   max-width: 100%;
 }
@@ -22,11 +21,210 @@ body {
   place-items: center;
   align-content: center;
   min-height: 100vh;
-  font-family: var(--f-df);
+  font-family: var(--f-1);
   font-size: var(--fs-df);
   background: var(--bg-body);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1120px) {
   body {}
+}
+
+
+/*_____ HEADER-H1-HIDDEN _____*/
+
+.sr-only {
+  /*@ https://tailwindcss.com/docs/screen-readers#screen-reader-only-elements */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+/*_____ TYPOGRAPHY _____*/
+
+h2 {
+  margin-block: 4.4375rem 1.5625rem;
+  margin-inline: 4.5rem 5.9375rem;
+  font-family: var(--f-h2);
+  color: var(--fc-h2);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-h2);
+  line-height: var(--lh-h2);
+  text-align: left;
+}
+
+.h2-accent {
+  color: var(--fc-h2-acc);
+}
+
+p {
+  margin-inline: 4.4688rem 7.7813rem;
+  font-family: var(--f-p);
+  color: var(--fc-p);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-p);
+  line-height: var(--lh-p);
+}
+
+.stat-count {
+  font-family: var(--f-stats);
+  color: var(--fc-stats);
+  font-size: var(--fs-stats);
+  font-weight: var(--fw-stats);
+  line-height: var(--lh-stats);
+  text-transform: uppercase;
+}
+
+h3.stat-heading {
+  font-family: var(--f-stat-head);
+  color: var(--fc-stat-head);
+  font-size: var(--fs-stat-head);
+  font-weight: var(--fw-stat-head);
+  line-height: var(--lh-stat-head);
+  letter-spacing: var(--ls-stat-head);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1120px) {
+  h2 {
+    margin-block: 2.5rem 1rem;
+    margin-inline: 1.9688rem 1.9688rem;
+    font-size: var(--fs-h2-mob);
+    line-height: var(--lh-h2-mob);
+    text-align: center;
+  }
+
+  p {
+    margin-inline: 1.9375rem 2rem;
+    line-height: var(--lh-p-mob);
+    text-align: center;
+  }
+
+  .stat-count {
+    line-height: var(--lh-stats-mob);
+    text-align: center;
+  }
+}
+
+
+/*_____ LAYOUT_____*/
+
+.card {
+  display: flex;
+  max-width: 69.375rem;
+  min-height: 27.875rem;
+  background: var(--bg-card);
+  border-radius: .625rem;
+  overflow: hidden;
+}
+
+@media (max-width: 1120px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20.4375rem;
+    min-height: 48.75rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 35.625rem;
+}
+
+@media (max-width: 1120px) {
+  .content {
+    width: 20.4375rem;
+    height: 453px;
+  }
+}
+
+/*### STATS CONTAINERS ###*/
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  max-height: 3.5rem;
+  margin-inline: 4.4688rem 9.1875rem;
+  margin-block: 4.5rem 3.6875rem;
+}
+
+@media (max-width: 1120px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-block: 2.5rem 2rem;
+    margin-inline: 1.9375rem 2rem;
+  }
+}
+
+.stat-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+/*_____ IMAGES DESKTOP/MOBILE _____*/
+
+/* ### DESKTOP ### */
+.image-wrap.mobile {
+  display: none;
+}
+
+.image-wrap.desktop {
+  width: 33.75rem;
+  height: 27.875rem;
+}
+
+.image-wrap {
+  background-color: var(--acc-img);
+}
+
+img {
+  opacity: 0.5;
+}
+
+/* ### MOBILE ### */
+@media (max-width: 1120px) {
+  .image-wrap.desktop {
+    display: none;
+  }
+
+  .image-wrap.mobile {
+    display: block;
+    width: 20.4375rem;
+    height: 15rem;
+  }
+}
+
+
+/*_____ FOOTER _____*/
+
+footer {
+  color: var(--text-footer);
+  font-size: .6875rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--text-footer-a);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text-footer-a-hov);
+}
+
+footer a:visited {
+  color: var(--text-footer-a-vis);
 }
